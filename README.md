@@ -7,7 +7,7 @@
 https://monicalent.com/blog/2019/01/06/responsive-images-with-nginx/
 
 1. Install before using configurations
-- On CentOS 7+
+On CentOS 7+
 
 > sudo yum install nginx-module-image-filter
 
