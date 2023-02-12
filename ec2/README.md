@@ -62,3 +62,32 @@ https://hongwei-lab58.top
 
 即可成功访问https域名了。
 
+
+5. 在EC2配置Nginx图片服务器
+
+参考文章：[Centos 利用yum源安装 nginx stream模块](https://blog.csdn.net/lanwilliam/article/details/125844808)
+
+主要阻碍在启动Nginx时可能会报错，无法加载module "ngx_http_image_filter_module".
+
+解决方法是安装nginx的这个module，但是yum自动安装并不能找到这个组件的位置，所以需要用新的命令安装：
+
+```
+> sodu yum install -y nginx-all-modules
+```
+
+安装所有的动态模块
+
+安装完成后检查
+
+```
+> ls /usr/lib64/nginx/modules
+```
+
+注意一点是，新的安装方式后，不需要在nginx.conf中配置这行：
+
+```
+load_module modules/ngx_http_image_filter_module.so;
+```
+
+系统会自动加载，如果加了这行，反而会报错，提示重复加载导致启动Nginx失败.
+
