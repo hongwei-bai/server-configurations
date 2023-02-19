@@ -23,7 +23,7 @@
 |---|---|---|---|---|---|---|---|
 | www | A | 境外 | 54.206.109.xxx | 10 分钟 | 正常 | | (略) |
 | @ | A | 境外 | 54.206.109.xxx | 10 分钟 | 正常 | | (略) |
-| _d661475918778d74815304845fb06xxx | CNAME | 境外 | _07206290c3840a469ecf4621f5427xxx.wrpxpmnjfs.acm-validations.aws | 10 分钟 | 正常 | | (略) |
+| _d661475918778d7481530xxxxxxxxxxx | CNAME | 境外 | _07206290c3840a4xxxxxxxxxxxxxxxxx.wrpxpxxxxx.acm-validations.aws | 10 分钟 | 正常 | | (略) |
 
 4. 如何使用Nginx+Https+万网域名+AWS ACM公有证书
 
